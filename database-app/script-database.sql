@@ -1,0 +1,22 @@
+DROP DATABASE IF EXISTS php_vagas;
+
+CREATE DATABASE php_vagas
+DEFAULT CHARACTER SET utf8mb4
+DEFAULT COLLATE utf8mb4_general_ci;
+
+USE php_vagas;
+
+CREATE TABLE vagas(
+    id_vaga INT PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(255) NOT NULL,
+    descricao TEXT NOT NULL,
+    ativo ENUM('s', 'n') NOT NULL,
+    data TIMESTAMP NOT NULL    
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+CREATE TABLE usuarios(
+    id    INT PRIMARY KEY AUTO_INCREMENT,
+    nome  VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
