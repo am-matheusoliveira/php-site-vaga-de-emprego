@@ -1,4 +1,4 @@
-# CRUD com Login de Usuário em PHP orientado a objetos, PDO e MySQL - WDEV
+# CRUD com Login de Usuário em PHP orientado a objetos, PDO e MySQL
 Código da implementação de um CRUD com Login de Usuário em PHP orientado a objetos e MySQL apresentado no canal [WDEV](http://wstore.io/wdev).
 
 ## Vídeo WDEV
